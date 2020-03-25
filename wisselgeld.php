@@ -6,6 +6,7 @@ $geld = intval($input);
 $cent = $input - $geld;
 $cent = intval(round($cent * 100));
 $cent = round($cent / 5) * 5;
+
 euro($geldeenheden, $geld);
 function euro($geldeenheden, $geld) {
     foreach ($geldeenheden as $value) {
